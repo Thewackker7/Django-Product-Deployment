@@ -1,0 +1,24 @@
+{% extends "Invapp/layout.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+<div class="jumbotron text-centre">
+    <h1 class="display-4">Welcome To Inventory Managment System </h1>
+    <p class="lead">
+        Manage your products efficiently and effectively </p>
+    <hr clas="my-4">
+    <p>
+        use the navigation bar to add,view,update or delete products 
+
+    </p>
+    <a href="{% url 'product_list'%}" class="btn btn-primary btn-lg" role="button">
+        View Products
+    </a>
+    <a href="{% url 'product_create'%}" class="btn btn-primary btn-lg" role="button">
+        Create Products
+    </a>
+
+</div>
+
+{% endblock %}
